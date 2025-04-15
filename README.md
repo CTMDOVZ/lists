@@ -1,4 +1,4 @@
-# Integrantes: ____   _____
+# Integrantes: Mateo Espinoza Monti y Alejandro Jesús Marcelo Chinchay
 
 # Lists
 Implementar las tres versiones de listas enlazadas: Forward Linked List, Doubly Linked List & Circular Doubly Linked List (con centinela).
