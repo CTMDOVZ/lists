@@ -1,4 +1,4 @@
-*#include <iostream>
+#include <iostream>
 #include "tester.h"
 #include "forward.h"
 #include "double.h"

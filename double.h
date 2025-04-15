@@ -163,4 +163,28 @@ public:
 
     bool is_sorted() override {
         if (!head || !head->next) return true;
-        Node
+        Node* current = head;
+        while (current->next) {
+            if (current->data > current->next->data) return false;
+            current = current->next;
+        }
+        return true;
+    }
+
+    void reverse() override {
+        Node* current = head;
+        Node* temp = nullptr;
+        while (current) {
+            std::swap(current->next, current->prev);
+            temp = current;
+            current = current->prev;
+        }
+        std::swap(head, tail);
+    }
+
+    std::string name() override {
+        return "DoubleList";
+    }
+};
+
+#endif
